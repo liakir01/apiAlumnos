@@ -9,4 +9,12 @@ class Alumno extends Model
 {
     /** @use HasFactory<\Database\Factories\AlumnoFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'nombre',
+        'numero_control',
+        'fecha_nacimiento',
+        'sexo',
+        'especialidad'];
+
 }

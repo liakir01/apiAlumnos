@@ -2,8 +2,9 @@
 @section('titulo') <h1>Registar Alumnos</h1> @stop
 
 @section('contenido')
-    <form action="" method="POST">
-        <div class="form-grup">
+    <form action="{{ url('/guardarAlumno')  }}" method="POST">
+        @csrf
+        <div class="form-grup mb-4">
             <label for="">Nombre</label>
             <input type="text" class="form-control" name="nombre" required>
         </div>
